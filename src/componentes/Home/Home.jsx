@@ -4,7 +4,7 @@ import "./Home.css"
 const Home = () => {
     return (
         <>
-        <div className="container-flex grid gap-5">
+        <div className="container-flex mt-5 grid gap-5">
             <div>
                 <div className="saludo mb-3">
                     <h1>Hola, soy Carmelo</h1>

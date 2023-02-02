@@ -19,12 +19,12 @@ return (
                 <img src="../../imagenes/github.png" alt="github"/>
             </div>
             <div className={`menu ${clicked ? 'active' : ''}`}>
-                <a href="#" onClick={handleClick}>Inicio</a>
-                <a href="#" onClick={handleClick}>Acerca</a>
-                <a href="#" onClick={handleClick}>Skills</a>
-                <a href="#" nClick={handleClick}>Estudios</a>
-                <a href="#" onClick={handleClick}>Portafolio</a>
-                <a href="#" onClick={handleClick}>Contacto</a>
+                <a href="#" onClick={handleClick}><img src="../../imagenes/hogar.png" />Inicio</a>
+                <a href="#" onClick={handleClick}><img src="../../imagenes/acceso.png" />Acerca</a>
+                <a href="#" onClick={handleClick}><img src="../../imagenes/pencil.png" />Skills</a>
+                <a href="#" nClick={handleClick}><img src="../../imagenes/sombrero-de-graduacion.png" />Estudios</a>
+                <a href="#" onClick={handleClick}><img src="../../imagenes/hogar.png" />Portafolio</a>
+                <a href="#" onClick={handleClick}><img src="../../imagenes/correo-de-contacto.png" />Contacto</a>
             </div>
             <div className="burguer">
                 <Burguerbutton clicked={clicked} handleClick={handleClick}/>
@@ -50,6 +50,7 @@ const NavContainer = styled.nav`
     justify-content: space-around;
 a{
     color: rgb(209, 206, 206);
+        
         text-decoration: none;
         margin-right:1rem;
     }
@@ -85,10 +86,10 @@ a{
     text-align:left;
     z-index:99;
     a{
+        margin-left:10px;
         font-size: 1.2rem;
         color: #050915;
-        margin-top: 20px;
-    }
+        margin-top: 30px;    }
 }
 .burguer{
     @media(min-width: 768px){
