@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
 body{
     background-color: #050915;
     color: rgb(209, 206, 206);
+    font-family: 'Rajdhani', sans-serif;
 }

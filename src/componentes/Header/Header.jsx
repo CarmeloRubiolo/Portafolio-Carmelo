@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components'
 import Burguerbutton from '../BurgerButton/BurgerButton'
+import './Header.css'
 
 function Navbar () {
 const [clicked, setClicked] = useState(false)
@@ -12,12 +13,16 @@ const handleClick = () => {
 return (
     <>
             <NavContainer>
-            <h2>Carmelo Rubiolo</h2>
+            <div className="container-redes">
+                <img src="../../imagenes/linkedin.png" alt="linkedin"/>
+                <img src="../../imagenes/twitter.png" alt="twitter"/>
+                <img src="../../imagenes/github.png" alt="github"/>
+            </div>
             <div className={`menu ${clicked ? 'active' : ''}`}>
                 <a href="#" onClick={handleClick}>Inicio</a>
                 <a href="#" onClick={handleClick}>Acerca</a>
                 <a href="#" onClick={handleClick}>Skills</a>
-                <a href="#" onClick={handleClick}>Estudios</a>
+                <a href="#" nClick={handleClick}>Estudios</a>
                 <a href="#" onClick={handleClick}>Portafolio</a>
                 <a href="#" onClick={handleClick}>Contacto</a>
             </div>
@@ -32,10 +37,13 @@ return (
 
 export default Navbar
 const NavContainer = styled.nav`
-h2{
-    color:white;
+.container-redes img{
+    height: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+    
 }
-    padding: .4rem;
+    padding-top: 15px;
     background-color: #050915;
     display:flex;
     align-items: center;
@@ -94,7 +102,7 @@ const BgDiv = styled.div`
     position:absolute;
     background-color: rgb(209, 206, 206);;
     left:-1000px;
-    z-index:0;
+    z-index: 1;
     transition: all .6s ease;
     &.active{
         top:0;
